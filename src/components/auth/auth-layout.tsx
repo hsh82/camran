@@ -51,7 +51,7 @@ export function Auth({
               width={24}
               className="dark:invert"
             />
-            <span>Parvaz</span>
+            <span>CamRan</span>
           </Link>
           <LanguageDropdown dictionary={dictionary} />
         </div>

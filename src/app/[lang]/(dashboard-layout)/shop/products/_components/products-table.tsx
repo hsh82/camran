@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { MoreHorizontal, PlusCircle } from "lucide-react"
 
 import type { ProductType } from "@/data/mock"
@@ -152,7 +153,26 @@ export function ProductsTable() {
           <TableBody>
             {products.map((product) => (
               <TableRow key={product.id}>
-                <TableCell className="font-medium">{product.name}</TableCell>
+                <TableCell>
+                  <div className="flex items-center gap-3">
+                    <div className="h-10 w-10 overflow-hidden rounded-lg bg-muted">
+                      {product.image ? (
+                        <Image
+                          src={product.image}
+                          alt={product.name}
+                          width={40}
+                          height={40}
+                          className="h-full w-full object-cover"
+                        />
+                      ) : (
+                        <div className="flex h-full w-full items-center justify-center text-sm font-bold text-muted-foreground">
+                          {product.name.charAt(0)}
+                        </div>
+                      )}
+                    </div>
+                    <span className="font-medium">{product.name}</span>
+                  </div>
+                </TableCell>
                 <TableCell>{product.sku}</TableCell>
                 <TableCell>{product.category}</TableCell>
                 <TableCell>{formatRial(product.price)}</TableCell>

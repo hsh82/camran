@@ -45,7 +45,7 @@ export function LandingHeader({ dictionary }: { dictionary: DictionaryType }) {
             width={24}
             className="dark:invert"
           />
-          <span>Parvaz</span>
+          <span>CamRan</span>
         </Link>
         <nav className="hidden lg:block">
           <ul className="place-self-center flex gap-2">

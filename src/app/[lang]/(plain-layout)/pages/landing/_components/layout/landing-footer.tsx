@@ -23,7 +23,7 @@ export function LandingFooter() {
               width={24}
               className="dark:invert"
             />
-            <span>Parvaz</span>
+            <span>CamRan</span>
           </Link>
           <h3 className="font-semibold leading-none tracking-tight">
             Subscribe to our newsletter
@@ -70,7 +70,7 @@ export function LandingFooter() {
               rel="noopener noreferrer"
               className={cn(buttonVariants({ variant: "link" }), "inline p-0")}
             >
-              Shadboard
+              CamRan
             </a>
             .
           </p>

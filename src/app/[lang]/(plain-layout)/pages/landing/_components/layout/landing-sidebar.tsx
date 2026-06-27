@@ -67,7 +67,7 @@ export function LandingSidebar({ fullPathname }: { fullPathname: string }) {
                 width={24}
                 className="dark:invert"
               />
-              <span>Parvaz</span>
+              <span>CamRan</span>
             </Link>
             <Link
               href={ensureLocalizedPathname("/register", locale)}

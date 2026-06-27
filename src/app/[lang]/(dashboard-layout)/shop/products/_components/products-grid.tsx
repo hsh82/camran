@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { MoreHorizontal, PlusCircle, Search } from "lucide-react"
 
 import type { ProductType } from "@/data/mock"
@@ -273,10 +274,19 @@ export function ProductsGrid() {
         {filtered.map((product) => (
           <Card key={product.id} className="overflow-hidden">
             <CardContent className="p-0">
-              <div className="aspect-square bg-muted flex items-center justify-center">
-                <div className="text-4xl font-bold text-muted-foreground/30">
-                  {product.name.charAt(0)}
-                </div>
+              <div className="aspect-square bg-muted relative overflow-hidden">
+                {product.image ? (
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="text-4xl font-bold text-muted-foreground/30">
+                    {product.name.charAt(0)}
+                  </div>
+                )}
               </div>
               <div className="p-4 space-y-2">
                 <div className="flex items-start justify-between">

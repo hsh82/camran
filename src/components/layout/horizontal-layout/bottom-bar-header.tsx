@@ -38,7 +38,7 @@ export function BottomBarHeader({
           width={24}
           className="dark:invert"
         />
-        <span>Parvaz</span>
+        <span>CamRan</span>
       </Link>
       <div className="flex gap-2">
         <NotificationDropdown dictionary={dictionary} />

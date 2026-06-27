@@ -10,6 +10,7 @@ export interface ProductType {
   shopId: string
   totalOrders?: number
   description?: string
+  image?: string
 }
 
 export const products: ProductType[] = [
@@ -24,6 +25,7 @@ export const products: ProductType[] = [
     createdAt: "2024-01-20",
     shopId: "1",
     totalOrders: 340,
+    image: "/images/misc/product-01.jpg",
   },
   {
     id: "2",
@@ -36,6 +38,7 @@ export const products: ProductType[] = [
     createdAt: "2024-02-05",
     shopId: "1",
     totalOrders: 210,
+    image: "/images/misc/product-02.jpg",
   },
   {
     id: "3",
@@ -48,6 +51,7 @@ export const products: ProductType[] = [
     createdAt: "2024-02-18",
     shopId: "2",
     totalOrders: 180,
+    image: "/images/misc/product-03.jpg",
   },
   {
     id: "4",
@@ -60,6 +64,7 @@ export const products: ProductType[] = [
     createdAt: "2024-03-01",
     shopId: "2",
     totalOrders: 95,
+    image: "/images/misc/product-04.jpg",
   },
   {
     id: "5",
@@ -72,6 +77,7 @@ export const products: ProductType[] = [
     createdAt: "2024-05-10",
     shopId: "3",
     totalOrders: 0,
+    image: "/images/misc/product-01.jpg",
   },
   {
     id: "6",
@@ -84,5 +90,6 @@ export const products: ProductType[] = [
     createdAt: "2024-03-15",
     shopId: "4",
     totalOrders: 150,
+    image: "/images/misc/product-02.jpg",
   },
 ]

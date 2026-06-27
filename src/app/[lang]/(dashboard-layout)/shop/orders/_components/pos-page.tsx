@@ -1,6 +1,7 @@
 "use client"
 
 import { useMemo, useState } from "react"
+import Image from "next/image"
 import { toast } from "sonner"
 import {
   CheckCircle2,
@@ -284,8 +285,20 @@ export function POSPage() {
                 onClick={() => addToCart(product)}
                 className="flex aspect-square flex-col items-center justify-center rounded-xl border-2 bg-background p-3 transition-all hover:border-primary hover:shadow-md"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-muted text-xl font-bold text-muted-foreground">
-                  {product.name.charAt(0)}
+                <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-lg bg-muted">
+                  {product.image ? (
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      width={64}
+                      height={64}
+                      className="object-cover"
+                    />
+                  ) : (
+                    <span className="text-2xl font-bold text-muted-foreground">
+                      {product.name.charAt(0)}
+                    </span>
+                  )}
                 </div>
                 <span className="mt-2 text-center text-sm font-medium leading-tight">
                   {product.name}

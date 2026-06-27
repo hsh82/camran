@@ -47,7 +47,7 @@ export function DocsSidebar() {
             width={24}
             className="dark:invert"
           />
-          <span>Parvaz</span>
+          <span>CamRan</span>
         </Link>
       </SidebarHeader>
       <ScrollArea className="h-[calc(100svh-4.25rem)]">
