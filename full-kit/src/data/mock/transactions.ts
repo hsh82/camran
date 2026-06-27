@@ -1,6 +1,12 @@
 export interface TransactionType {
   id: string
-  type: "sale" | "cashback_paid" | "cashback_earned" | "refund" | "withdrawal"
+  type:
+    | "sale"
+    | "cashback_paid"
+    | "cashback_earned"
+    | "refund"
+    | "withdrawal"
+    | "commission"
   amount: number
   currency: string
   shopId?: string
@@ -85,5 +91,53 @@ export const transactions: TransactionType[] = [
     shopName: "Tech Store",
     description: "Shop balance withdrawal",
     createdAt: "2024-06-25T11:20:00Z",
+  },
+  {
+    id: "TXN-007",
+    type: "commission",
+    amount: 4.75,
+    currency: "USD",
+    shopId: "1",
+    shopName: "Tech Store",
+    orderId: "ORD-001",
+    description: "Platform commission (5%)",
+    createdAt: "2024-06-20T10:30:00Z",
+  },
+  {
+    id: "TXN-008",
+    type: "cashback_earned",
+    amount: 2.7,
+    currency: "USD",
+    customerId: "7",
+    customerName: "Sara Mirzaei",
+    orderId: "ORD-008",
+    description: "Cashback earned on purchase",
+    createdAt: "2024-06-18T13:20:00Z",
+  },
+  {
+    id: "TXN-009",
+    type: "cashback_paid",
+    amount: 7.5,
+    currency: "USD",
+    shopId: "1",
+    shopName: "Tech Store",
+    customerId: "10",
+    customerName: "Ali Tolo",
+    orderId: "ORD-010",
+    description: "Cashback paid to shop",
+    createdAt: "2024-06-16T15:00:00Z",
+  },
+  {
+    id: "TXN-010",
+    type: "sale",
+    amount: 45,
+    currency: "USD",
+    shopId: "6",
+    shopName: "Fresh Grocery",
+    customerId: "6",
+    customerName: "Kian Golshan",
+    orderId: "ORD-007",
+    description: "Order payment received",
+    createdAt: "2024-06-19T08:45:00Z",
   },
 ]

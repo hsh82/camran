@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 
-import { ReportsOverview } from "./_components/reports-overview"
+import { ReportsTabs } from "./_components/reports-tabs"
 
 export const metadata: Metadata = {
   title: "Reports",
@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 
 export default function AdminReportsPage() {
   return (
-    <section className="container grid gap-4 p-4 md:grid-cols-2">
-      <ReportsOverview />
+    <section className="container grid gap-4 p-4">
+      <ReportsTabs />
     </section>
   )
 }
