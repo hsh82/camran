@@ -1,6 +1,7 @@
 import { Benefits } from "./_components/benefits"
 import { ContactUs } from "./_components/contact-us"
 import { CoreFeatures } from "./_components/core-features"
+import { DocumentationCTA } from "./_components/documentation-cta"
 import { Faqs } from "./_components/faqs"
 import { Hero } from "./_components/hero"
 import { HowItWorks } from "./_components/how-it-works"
@@ -28,6 +29,7 @@ export default function LandingPage() {
       <ReadyToBuildCTA />
       <Faqs />
       <ContactUs />
+      <DocumentationCTA />
     </div>
   )
 }

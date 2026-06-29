@@ -1,5 +1,6 @@
 "use client"
 
+import { Fragment } from "react"
 import { CheckCircle2, XCircle } from "lucide-react"
 
 import { Card, CardContent } from "@/components/ui/card"
@@ -35,7 +36,7 @@ export function WhyUs() {
               پلتفرم کش‌بک
             </div>
             {comparisonRows.map((row, idx) => (
-              <>
+              <Fragment key={idx}>
                 <div
                   key={`label-${idx}`}
                   className="p-4 border-b border-l text-sm"
@@ -54,7 +55,7 @@ export function WhyUs() {
                 >
                   <CheckCircle2 className="h-5 w-5 text-green-500" />
                 </div>
-              </>
+              </Fragment>
             ))}
           </div>
         </CardContent>

@@ -9,6 +9,7 @@ export const routeMap = new Map<string, RouteType>([
   ["/", { type: "public" }],
   ["/docs", { type: "public" }],
   ["/documentation", { type: "public" }],
+  ["/documents", { type: "public" }],
   ["/admin", { type: "public" }],
   ["/shop", { type: "public" }],
   ["/customer", { type: "public" }],
