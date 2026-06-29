@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="./public/images/icons/shadboard.svg" width="140" alt="Camran Logo" />
+</p>
+
+<h1 align="center">Camran</h1>
+
 # Cashback Platform Demo
 
 A modern **multi-vendor cashback and customer loyalty platform** built with **Next.js**, **React**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui**.
